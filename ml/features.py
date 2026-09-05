@@ -3,6 +3,7 @@
 # Relevant vs Irrelevant. Combines hand-crafted linguistic features
 # with spaCy's NLP analysis.
 
+import re
 import spacy
 
 # Load spaCy's English model once (reused for every sentence)
@@ -30,9 +31,24 @@ IRRELEVANCE_PHRASES = [
 
 DEADLINE_WORDS = [
     "deadline", "by friday", "by monday", "by tuesday", "by wednesday",
-    "by thursday", "by saturday", "by sunday", "today", "tomorrow",
+    "by thursday", "by saturday", "by sunday", "by tomorrow",
     "this week", "next week", "end of day", "end of week",
-    "this quarter", "next month"
+    "this quarter", "next month", "due date", "due by"
+]
+
+# --- Flexible irrelevance patterns ---
+# Words that commonly appear between "I" and a feeling/opinion verb,
+# without changing the casual/irrelevant nature of the sentence,
+# e.g. "I really hate" / "I just don't like" / "I honestly hate"
+INTENSIFIER_WORDS = r"(?:really|just|honestly|kind of|sort of|totally|absolutely)?"
+
+# Regex patterns that tolerate an optional intensifier word between
+# "I" and the feeling/opinion verb, so phrasing variations are still caught.
+FLEXIBLE_IRRELEVANCE_PATTERNS = [
+    re.compile(rf"\bi\s+{INTENSIFIER_WORDS}\s*don'?t\s+(?:really\s+)?like\b", re.I),
+    re.compile(rf"\bi\s+{INTENSIFIER_WORDS}\s*hate\b", re.I),
+    re.compile(rf"\bi'?m\s+{INTENSIFIER_WORDS}\s*tired\b", re.I),
+    re.compile(rf"\bi\s+don'?t\s+feel\s+like\b", re.I),
 ]
 
 
@@ -49,7 +65,12 @@ def extract_features(sentence):
     # --- 1. Lexical / keyword features ---
     features["has_action_phrase"] = int(any(p in text_lower for p in ACTION_PHRASES))
     features["has_modal_verb"] = int(any(m in text_lower for m in MODAL_VERBS))
-    features["has_irrelevance_phrase"] = int(any(p in text_lower for p in IRRELEVANCE_PHRASES))
+
+    matches_flexible_pattern = any(pattern.search(sentence) for pattern in FLEXIBLE_IRRELEVANCE_PATTERNS)
+    features["has_irrelevance_phrase"] = int(
+        any(p in text_lower for p in IRRELEVANCE_PHRASES) or matches_flexible_pattern
+    )
+
     features["has_deadline_word"] = int(any(d in text_lower for d in DEADLINE_WORDS))
 
     # --- 2. Structural features ---
@@ -80,7 +101,8 @@ if __name__ == "__main__":
         "We need to submit the report by Friday.",
         "Did you watch the match yesterday?",
         "The model is not performing well, we need to retrain it.",
-        "I am very happy because I bought a new phone."
+        "I am very happy because I bought a new phone.",
+        "I really hate doing documentation and honestly I don't feel like working today"
     ]
 
     for s in test_sentences:
