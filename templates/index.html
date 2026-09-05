@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Sticky Note Meeting Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <header class="app-header">
+    <h1>🗒️ AI Meeting Sticky Notes</h1>
+  </header>
+
+  <main class="container">
+
+    <section class="recording-card">
+      <label for="meetingName">Meeting Name</label>
+      <input type="text" id="meetingName" placeholder="e.g. Project Discussion" />
+
+      <div class="controls">
+        <button id="startBtn">🔴 Start Recording</button>
+        <button id="stopBtn" disabled>⏹ Stop Recording</button>
+      </div>
+
+      <div class="status-row">
+        <span id="timer">00:00</span>
+        <span id="statusText">Idle</span>
+      </div>
+    </section>
+
+    <section id="resultArea" class="result-card" style="display:none;">
+      <h3>✅ Upload Result</h3>
+      <p id="resultText"></p>
+    </section>
+
+    <section id="stickyNotesArea" class="result-card" style="display:none;">
+      <h3>📌 Sticky Notes</h3>
+      <div id="stickyNotesGrid" class="sticky-grid"></div>
+    </section>
+
+    <section id="transcriptArea" class="result-card" style="display:none;">
+      <h3>📝 Full Transcript</h3>
+      <div id="transcriptList"></div>
+    </section>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='js/recorder.js') }}"></script>
+</body>
+</html>

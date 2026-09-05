@@ -1,0 +1,7 @@
+flask
+faster-whisper
+scikit-learn
+spacy
+nltk
+pandas
+numpy

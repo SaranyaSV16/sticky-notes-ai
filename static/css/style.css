@@ -1,0 +1,155 @@
+.transcript-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transcript-row:last-child {
+  border-bottom: none;
+}
+
+.transcript-time {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 3px;
+}
+
+.transcript-text {
+  font-size: 15px;
+  color: #222;
+}
+
+.transcript-row {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #ccc;
+}
+
+.transcript-row.relevant {
+  background: #eafaf0;
+  border-left-color: #2ecc71;
+}
+
+.transcript-row.irrelevant {
+  background: #f5f5f5;
+  border-left-color: #bbb;
+}
+
+.transcript-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.transcript-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.transcript-label {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.label-relevant {
+  background: #2ecc71;
+  color: white;
+}
+
+.label-irrelevant {
+  background: #bbb;
+  color: white;
+}
+
+.transcript-text {
+  font-size: 15px;
+  color: #222;
+}
+
+.sticky-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.sticky-card {
+  background: #fff9c4;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.15s;
+}
+
+.sticky-card:hover {
+  transform: translateY(-2px);
+}
+
+.sticky-card.kept {
+  background: #d4f8d4;
+}
+
+.sticky-category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.sticky-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2b2d42;
+}
+
+.sticky-detail {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 3px;
+}
+
+.sticky-uncertain {
+  font-size: 12px;
+  color: #b8860b;
+  background: #fff3cd;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.sticky-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.sticky-actions button {
+  flex: 1;
+  padding: 6px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.keep-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.remove-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.kept-label {
+  font-size: 12px;
+  color: #2ecc71;
+  font-weight: 600;
+}

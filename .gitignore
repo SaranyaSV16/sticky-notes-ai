@@ -1,0 +1,18 @@
+﻿# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Trained model artifacts (regenerate via: python ml/train_classifier.py)
+models/*.joblib
+
+# Personal audio recordings and database (privacy - contains real recorded speech)
+data/audio/*.webm
+data/meetings.db
+
+# OS/editor clutter
+.vscode/
+.DS_Store
+Thumbs.db

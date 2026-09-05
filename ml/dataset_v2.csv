@@ -1,0 +1,150 @@
+sentence,label
+"We need to submit the report by Friday.",Relevant
+"I'll prepare the presentation slides tonight.",Relevant
+"Let's change the methodology for this phase.",Relevant
+"The meeting is scheduled for 10 AM on Monday.",Relevant
+"Rahul will handle the conclusion section.",Relevant
+"We decided to use Python for the backend.",Relevant
+"Can you send the dataset to Sonali by tomorrow?",Relevant
+"The deadline for the final draft is next Wednesday.",Relevant
+"I will complete the testing phase by end of day.",Relevant
+"We have to fix the bug before the demo.",Relevant
+"Let's finalize the budget for this quarter.",Relevant
+"The client wants the report delivered by Thursday.",Relevant
+"I think we should prioritize the frontend first.",Relevant
+"Someone needs to review the pull request today.",Relevant
+"We agreed to move the launch date to next month.",Relevant
+"Please update the documentation before the release.",Relevant
+"The team decided to switch to a new framework.",Relevant
+"I'll follow up with the vendor about pricing.",Relevant
+"We should schedule a call with the stakeholders.",Relevant
+"The presentation needs three more slides on results.",Relevant
+"Abhishek, can you send the report to Sonali by end of week?",Relevant
+"Let's start the meeting and go over today's agenda.",Relevant
+"I appreciate everyone joining, let's get into the update.",Relevant
+"Can someone take ownership of the tracking issue?",Relevant
+"We're signing up new campaign managers this week.",Relevant
+"I think this team can take on the migration task.",Relevant
+"Let's push the release to next sprint.",Relevant
+"The model is not performing well, we need to retrain it.",Relevant
+"The project hasn't been completed yet, we're behind schedule.",Relevant
+"This approach isn't working, we should try something else.",Relevant
+"Our numbers are down this quarter, we need to investigate.",Relevant
+"The server crashed twice this week, that's a serious problem.",Relevant
+"We lost two clients last month due to delays.",Relevant
+"The current design has major usability issues.",Relevant
+"This feature is broken and needs to be fixed urgently.",Relevant
+"We're falling behind on the roadmap for this release.",Relevant
+"The budget overran by twenty percent this quarter.",Relevant
+"There's a critical bug in the payment system.",Relevant
+"Our test coverage dropped significantly after the last update.",Relevant
+"The vendor missed the delivery deadline again.",Relevant
+"The report needs to be ready by next Tuesday.",Relevant
+"Sonali is responsible for the budget analysis.",Relevant
+"We must finish testing before the release.",Relevant
+"The client expects delivery by end of month.",Relevant
+"Our next milestone is the beta launch in two weeks.",Relevant
+"The team will meet again on Thursday to review progress.",Relevant
+"I'll circulate the notes after this call.",Relevant
+"We're pushing the sprint review to next week.",Relevant
+"The engineering team found a critical security flaw.",Relevant
+"Sales dropped fifteen percent compared to last quarter.",Relevant
+"We need sign-off from legal before proceeding.",Relevant
+"The invoice is due at the end of the month.",Relevant
+"Priya is taking over the client communication from now on.",Relevant
+"We should document this decision for the record.",Relevant
+"The prototype needs another round of testing.",Relevant
+"Let's assign someone to handle customer complaints.",Relevant
+"The database migration is scheduled for this weekend.",Relevant
+"We need to renegotiate the contract terms.",Relevant
+"I'll draft the proposal and share it by Monday.",Relevant
+"The QA team flagged three critical issues.",Relevant
+"We should increase the marketing budget next quarter.",Relevant
+"Let's finalize the hiring decision this week.",Relevant
+"The server migration caused downtime for two hours.",Relevant
+"We need approval from the finance team first.",Relevant
+"The design review is set for tomorrow afternoon.",Relevant
+"I'll take care of the vendor payment today.",Relevant
+"We have to submit the compliance report by month end.",Relevant
+"The onboarding process needs to be simplified.",Relevant
+"Let's set up a follow-up meeting for next week.",Relevant
+"The client raised concerns about the timeline.",Relevant
+"We should reduce our cloud costs this quarter.",Relevant
+"Did you watch the match yesterday?",Irrelevant
+"Haha, that was really funny.",Irrelevant
+"How are you doing today?",Irrelevant
+"I don't like my boss sometimes.",Irrelevant
+"I hate doing these documentation tasks.",Irrelevant
+"I'm feeling tired today.",Irrelevant
+"My weekend was so relaxing.",Irrelevant
+"That movie was hilarious.",Irrelevant
+"I went hiking last Sunday.",Irrelevant
+"Do you want to grab coffee later?",Irrelevant
+"My cat knocked over a plant again.",Irrelevant
+"Traffic was terrible this morning.",Irrelevant
+"I can't believe how hot it is today.",Irrelevant
+"Did you see that meme going around?",Irrelevant
+"I'm really into this new show on Netflix.",Irrelevant
+"Yeah, that's cool.",Irrelevant
+"Cool.",Irrelevant
+"Yep.",Irrelevant
+"That's funny honestly.",Irrelevant
+"I appreciate you, you're a good friend.",Irrelevant
+"I am very happy because I bought a new phone.",Irrelevant
+"I love spending time with my family on weekends.",Irrelevant
+"I'm so excited about my vacation next month.",Irrelevant
+"This coffee tastes amazing today.",Irrelevant
+"I'm thrilled about the new restaurant that opened nearby.",Irrelevant
+"I don't like working with this team sometimes.",Irrelevant
+"I'm annoyed that I woke up late today.",Irrelevant
+"I really don't enjoy Mondays.",Irrelevant
+"I'm just tired of this whole week honestly.",Irrelevant
+"I hate how slow my internet is at home.",Irrelevant
+"Sorry I'm a bit late, traffic was crazy.",Irrelevant
+"By the way, did you catch the game last night?",Irrelevant
+"Anyway, how's your family doing?",Irrelevant
+"I was just testing this, not sure if it's working.",Irrelevant
+"I don't know if this transcript is alive.",Irrelevant
+"Let's see if this thing is even working.",Irrelevant
+"So yeah, that's basically it I guess.",Irrelevant
+"Okay cool, sounds good.",Irrelevant
+"Thanks for adding this, appreciate it.",Irrelevant
+"That's a good point honestly.",Irrelevant
+"So then just so you know, whatever.",Irrelevant
+"Honestly, I am so tired today.",Irrelevant
+"I barely slept last night.",Irrelevant
+"The cafeteria food was terrible today.",Irrelevant
+"I watched a really good movie yesterday.",Irrelevant
+"I have a headache today.",Irrelevant
+"My weekend was great, thanks for asking.",Irrelevant
+"I went to the gym this morning.",Irrelevant
+"I woke up late today, sorry about that.",Irrelevant
+"Today was such a long day honestly.",Irrelevant
+"I had a great lunch today.",Irrelevant
+"I'm exhausted this evening.",Irrelevant
+"Last night's game was amazing.",Irrelevant
+"I'm not feeling well today.",Irrelevant
+"This morning was hectic because of traffic.",Irrelevant
+"I got coffee with a friend this afternoon.",Irrelevant
+"Yesterday was my birthday, it was fun.",Irrelevant
+"I stayed up late last night watching TV.",Irrelevant
+"This weekend I'm just going to relax.",Irrelevant
+"I've been feeling under the weather this week.",Irrelevant
+"Today's weather is really nice outside.",Irrelevant
+"I'm planning a trip next month with my friends.",Irrelevant
+"Last week I tried a new recipe at home.",Irrelevant
+"I'm binge-watching a series this week.",Irrelevant
+"This morning I overslept and missed breakfast.",Irrelevant
+"I went for a walk yesterday evening.",Irrelevant
+"Tonight I'm just going to order takeout.",Irrelevant
+"I'm so sleepy right now, honestly.",Irrelevant
+"I don't know, I'm just rambling at this point.",Irrelevant
+"Um, yeah, I guess that's true.",Irrelevant
+"So, uh, anyway, moving on.",Irrelevant
+"I think, you know, it's whatever.",Irrelevant
+"Honestly, no idea what I'm saying right now.",Irrelevant
+"This is kind of a random tangent, sorry.",Irrelevant
+"I just wanted to say hi, that's it.",Irrelevant
+"Not gonna lie, I zoned out for a second.",Irrelevant
+"I'm just thinking out loud here, ignore me.",Irrelevant
+"Random thought, but I love pizza.",Irrelevant
